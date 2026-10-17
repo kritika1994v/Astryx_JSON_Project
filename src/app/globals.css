@@ -1,0 +1,51 @@
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@import '@astryxdesign/core/reset.css';
+@import '@astryxdesign/core/astryx.css';
+@import '@astryxdesign/theme-neutral/theme.css';
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 40px 6%;
+}
+
+.footer h3,
+.footer h4 {
+  color: #ffffff !important;
+}
+
+.footer p {
+  color: #cbd5e1 !important;
+  line-height: 1.7;
+}
+
+.footer a {
+  color: #cbd5e1 !important;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #60a5fa !important;
+}
+
+.footer hr {
+  border-color: #334155;
+  margin: 25px 0;
+}
+
+@media (max-width: 768px) {
+  .footer [class*="Grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fullscreen-hero {
+    height: 70vh;
+  }
+}
